@@ -21,20 +21,21 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
+```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
-
 <html>
 <body>
-<h1>laptop configuration</h1>
+<h1>laptop configuration - (rohini)(24005989)</h1>
 <ul>
-<li>((Device name DESKTOP-MOHHBTU)</li>
-<li>(Processor 13th Gen Intel(TM)i5-1335U)</li>
-<li>(Intalled RAM 16.0 GB(15.7 GB usable)</li>
-<li>(Device ID 15EEA3B2-7EF5-98228-AAOEM)</li>
-<li>(Project ID 00342-42708-98228-AAOEM)</li>
-<li>(System type 64-bit operating system,x64-based processor)</li>
-<li>(pen and touch No pen or touch input is available for this display)</li>
+<li>Device name    Rohini</li>
+<li>Processor      13th Gen Intel(R) Core(TM) i5-1335U   1.30 GHz</li>
+<li>Intalled RAM   16.0 GB (15.7 GB usable)</li>
+<li>Device ID      15EEA3B2-7EF5-4DEC-903D-577382C3C005
+li> Project ID     00342-42708-98228-AAOEM</li>
+<li>System type    64-bit operating system, x64-based processor</li>
+<li>pen and touch  No pen or touch input is available for this display)</li>
+</ul>
 </body>
 </html>
 """
@@ -49,13 +50,10 @@ server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
-
-```
-
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot (2).png>)
-![alt text](<Screenshot (1).png>)
+![alt text](<Screenshot (4).png>)
+![alt text](<Screenshot (5).png>)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
